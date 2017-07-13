@@ -1,0 +1,145 @@
+@import url(../reset/reset.css);
+
+/*---------------------CONTAINERS AND WRAPPER,STYLES---------*/
+
+a {
+    text-decoration: none;
+    color: #a09f9f;
+}
+
+.block-text___ a {
+    color: #fff;
+}
+
+.block-text___ a:hover {
+    color: #ff1;
+}
+
+a:hover,
+a:active,
+a:focus,
+a:visited {
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    color: #61d0d4;
+    transition: 150ms;
+}
+
+.txt_up {
+    text-transform: uppercase;
+}
+
+
+/*-----------------------------------------------*/
+
+.wrapper {
+    font-size: 16px;
+}
+
+.wrapper,
+body,
+html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*--------------------------------HEADER---------
+------*/
+
+header {
+    font-family: 'Droid Serif', 'Arial', serif;
+    margin-top: 40px;
+}
+
+header .menu-header {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1.125rem;
+    color: #a09f9f;
+    max-width: 600px;
+}
+
+header h2 {
+    font-size: 2.688rem;
+    font-weight: bold;
+}
+
+span.header-span {
+    display: block;
+    padding-top: 5px;
+    font-size: 1.125rem;
+}
+
+
+/* -----------------MAIN------------------*/
+
+main {
+    margin-top: 85px;
+    font-family: 'Droid Serif', 'Arial', serif;
+}
+
+.block-img {
+    padding-top: 70px;
+}
+
+h1 {
+    font-size: 7.5rem;
+    font-weight: bold;
+}
+
+.block-text p {
+    font-weight: normal;
+    font-size: 3.35rem;
+}
+
+.block-text___ {
+    margin: 100px 0px 60px;
+    color: #fff;
+}
+
+.block-circle {
+    background-color: #9b2439;
+    padding: 60px 40px;
+    border-radius: 50%;
+}
+
+.block-circle-2 {
+    background-color: #61d0d4;
+}
+
+.block-circle-3 {
+    background-color: #d1c926;
+}
+
+.p-main {
+    font-size: 1.125rem;
+    line-height: 30px;
+}
+
+
+/*--------------------FOOTER------------------------*/
+
+footer {
+    background-color: #e83556;
+    margin-top: 150px;
+    padding: 50px 0px 40px;
+    color: #fff;
+    font-family: "Open Sans", 'Arial';
+    font-weight: bold;
+    font-size: 0.9375rem;
+    line-height: 20px;
+    flex: 1;
+}
+
+footer .container {
+    flex-wrap: wrap;
+}
+
+.block-footer p {
+    padding-left: 1rem;
+}
