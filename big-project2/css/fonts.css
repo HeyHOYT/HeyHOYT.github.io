@@ -1,0 +1,30 @@
+@font-face {
+	font-family: "HelveticaBold";
+	src: url("../fonts/HelveticaBold.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "PFDinCondensedRegular";
+	src: url("../fonts/PFDinCondensedRegular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "HelveticaNeue";
+	src: url("../fonts/HelveticaNeue.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "dinpro-black";
+	src: url("../fonts/dinpro-black.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "HelveticaNeueCyrBold";
+	src: url("../fonts/HelveticaNeueCyrBold.otf");
+	font-style: normal;
+	font-weight: normal;
+}
