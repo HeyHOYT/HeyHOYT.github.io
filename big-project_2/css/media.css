@@ -1,0 +1,592 @@
+@media screen and (max-width: 1600px) {
+    .projects .slider {
+        width: 50%;
+    }
+    section.insta .slider {
+        width: 60%;
+    }
+    .reviews .bx-wrapper .bx-next {
+        right: 2%;
+    }
+}
+
+@media screen and (max-width: 1552px) {
+    section.insta .images .container {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    header {
+        padding-bottom: 70px;
+    }
+    header .about .video {
+        float: none;
+        margin-bottom: 40px;
+    }
+    .tree-block_.block-tree_:nth-child(n + 7) {
+        align-items: flex-end;
+        margin-top: 150px;
+    }
+    .img-responsiv__blog {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .reviews .bx-wrapper .bx-prev {
+        left: 20%;
+    }
+    .reviews .bx-wrapper .bx-next {
+        right: 20%;
+    }
+    .reviews .bxslider .text p:first-of-type {
+        white-space: normal;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    header h1 {
+        padding-top: 120px;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    section.insta h2:last-of-type::before {
+        display: none;
+    }
+    section.insta .slider {
+        width: 61%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .img-respon-blog {
+        width: 30%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .reviews {
+        height: 900px;
+    }
+    aside {
+        padding-left: 23px
+    }
+    aside .icon-menu {
+        margin-left: 330px;
+    }
+    header {
+        height: auto;
+    }
+    header .images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header .images img {
+        width: 80%;
+        margin-right: 8px;
+    }
+    header .images img:nth-child(2n) {
+        width: 80%;
+        margin-right: 8px;
+    }
+    header h1 span::before {
+        margin-left: -54px;
+        font-size: 79.3px;
+    }
+    header h1 span {
+        font-size: 35.7px;
+        padding-left: 184px;
+    }
+    header h1 {
+        font-size: 47.5px;
+    }
+    header .about .video img {
+        width: 80%;
+    }
+    header .about .text {
+        margin-left: 50px;
+    }
+    .gallery__ul {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .gallery__li {
+        padding-top: 20px;
+    }
+    .tree-block_.block-tree_:nth-child(n + 4) {
+        display: none;
+    }
+    .tree-block_.block-tree_ {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 752px) {
+    section.insta h2:first-of-type::before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    header h1:before {
+        display: none;
+        padding-left: 0;
+    }
+    header h1 {
+        padding-top: 60px;
+    }
+    .projects .owl-carousel .owl-prev {
+        left: -97px;
+    }
+    .projects .owl-carousel .owl-next {
+        right: -96px;
+    }
+    section.insta h2:last-of-type {
+        font-size: 45.5px;
+        padding-left: 60px;
+    }
+    section.insta .owl-carousel .owl-prev {
+        left: -97px;
+    }
+    section.insta .owl-carousel .owl-next {
+        right: -96px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .container_block-- {
+        width: 95%;
+    }
+    .img-responsive {
+        height: auto;
+        width: 100%;
+    }
+    .tree-block_ {
+        margin-left: 15px;
+    }
+    .tree-block_:nth-child(n+4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header .images {
+        width: 100%;
+    }
+    .mob {
+        display: block;
+    }
+    aside {
+        display: none;
+    }
+    .top-line .logo {
+        float: left;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    header .top-line .search {
+        margin-right: 5px;
+    }
+
+    header {
+        padding: 34px 22px 0 27px;
+        height: auto;
+        padding-bottom: 100px;
+    }
+    header .top-line .search {
+        display: none;
+        cursor: pointer;
+    }
+    header .top-line .mob .search {
+        display: block;
+        float: right;
+    }
+    header .mob .hamburger {
+        float: right;
+        cursor: pointer;
+    }
+    header .mob .social {
+        clear: both;
+        margin-top: 50px;
+    }
+    header .mob .social a {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin-right: 30px;
+    }
+    header .mob .social a:first-child {
+        background-image: url(../img/sprite.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+    }
+    header .mob .social a:nth-child(2) {
+        background-image: url(../img/sprite.png);
+        background-position: -45px 0;
+        background-repeat: no-repeat;
+    }
+    header .mob .social a:nth-child(3) {
+        background-image: url(../img/sprite.png);
+        background-position: -108px 0;
+        background-repeat: no-repeat;
+    }
+    header .mob .social a:last-child {
+        background-image: url(../img/sprite.png);
+        background-position: -160px 0;
+        background-repeat: no-repeat;
+        position: relative;
+        bottom: 5px;
+        margin-right: 0;
+    }
+    header .mob p {
+        float: left;
+        text-align: center;
+        font-size: 21px;
+        padding: 35px 0 51px 0;
+        color: #957a5f;
+    }
+    header .mob p:last-child {
+        float: right;
+        padding: 35px 0 51px 0;
+    }
+
+    header h1 {
+        display: none;
+    }
+    header h2.mob {
+        font-family: "PFDinCondensedRegular";
+        font-size: 48px;
+        left: 0;
+        display: inline-block;
+        float: left;
+        position: relative;
+        text-align: left;
+        padding-top: 65px;
+        letter-spacing: 25px;
+        line-height: 40px;
+        color: #fff;
+        white-space: pre-line;
+        text-transform: uppercase;
+    }
+    header h2.mob span {
+        font-family: "dinpro-black";
+        font-size: 36px;
+        position: relative;
+        left: 50px;
+        letter-spacing: 9px;
+        color: #878787;
+    }
+    header h2.mob span:before {
+        content: "&";
+        position: absolute;
+        color: #fff;
+        margin-left: -50px;
+        margin-top: 20px;
+        font-family: "dinpro-black";
+        font-size: 72px;
+    }
+    header .about .video img {
+        max-width: 100%;
+        margin-top: 60px;
+    }
+    header .about .text {
+        margin-left: 0px;
+    }
+    header .about .text h2 {
+        padding-top: 35px;
+    }
+    header .about .text h2 span {
+        font-family: "HelveticaBold";
+        letter-spacing: 6px;
+    }
+    .projects {
+        height: 800px;
+        padding: 0 46px 0 10px;
+    }
+    .projects .stick {
+        left: 43.4%;
+        margin-left: -5px;
+    }
+    .projects .slider {
+        padding: 0px 90px;
+        margin: 60px auto 0 auto;
+        overflow: hidden;
+    }
+    .projects .owl-carousel .owl-prev {
+        left: -70px;
+    }
+    .projects .owl-carousel .owl-next {
+        right: -30px;
+    }
+    .reviews h2 {
+        font-family: "PFDinCondensedRegular";
+        font-size: 42.5px;
+        padding-left: 54px;
+        padding-top: 95px;
+        letter-spacing: 15px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .bx-viewport {
+        height: 1000px !important;
+    }
+    .reviews .bx-wrapper {
+        margin: 75px auto 0 auto;
+        height: 1000px;
+    }
+    .projects .owl-carousel .item .text {
+        padding: 33px 0 0 10px;
+        font-size: 21px;
+    }
+
+    .projects .stick2 {
+        left: 43.4%;
+        margin-left: -5px;
+    }
+    .bx-wrapper img {
+        margin-left: 10px;
+        max-width: 398px !important;
+    }
+    .bx-wrapper .bx-prev {
+        left: 0px;
+    }
+    .bx-wrapper .bx-next {
+        right: 20px;
+    }
+    .reviews {
+        width: auto;
+        height: auto;
+        padding-right: 0;
+        background-color: #292929;
+        position: relative;
+    }
+    .bx-viewport {
+        padding-left: 27px;
+    }
+    .reviews .bxslider .text p:first-of-type {
+        color: #fff;
+        max-width: auto;
+        padding-right: 70px;
+        white-space: normal;
+        line-height: 23px;
+    }
+    .reviews .bx-wrapper .bx-prev {
+        left: 28px;
+        background: url('../img/sprite.png') no-repeat 0px -170px;
+    }
+    .reviews .bx-wrapper .bx-next {
+        right: 37px;
+        background: url('../img/sprite.png') no-repeat -70px -170px;
+    }
+    section.insta {
+        height: auto;
+        padding-right: 0;
+        padding: 0 22px 0 27px;
+    }
+    section.insta h2:first-of-type {
+        font-family: "PFDinCondensedRegular";
+        font-size: 48px;
+        text-align: left;
+        padding-left: 0;
+        padding-top: 76px;
+        letter-spacing: 20px;
+        color: #292929;
+        text-transform: uppercase;
+    }
+    section.insta h2:first-of-type::before {
+        content: "";
+        position: absolute;
+        width: 136px;
+        height: 8px;
+        margin-top: 110px;
+        margin-left: 2px;
+        background-color: #292929;
+    }
+    section.insta .images .container {
+        width: 48%;
+        margin-right: 2px;
+        overflow: hidden;
+    }
+    section.insta .images .container img {
+        width: 95%;
+    }
+    section.insta h2:last-of-type {
+        font-family: "PFDinCondensedRegular";
+        font-size: 48px;
+        padding-top: 70px;
+        text-align: left;
+        padding-left: 0;
+        white-space: pre-line;
+        letter-spacing: 20px;
+        color: #292929;
+        text-transform: uppercase;
+    }
+    section.insta h2:last-of-type::before {
+        margin-top: 110px;
+    }
+    .insta .bx-viewport {
+        width: 80% !important;
+    }
+    .insta .bx-wrapper .bx-prev {
+        left: -27px;
+        background: url('../img/sprite.png') no-repeat 25px -150px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .insta .bx-wrapper .bx-next {
+        right: -22px;
+        background: url('../img/sprite.png') no-repeat -60px -150px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .insta .bx-wrapper img {
+        margin-left: 10px;
+        max-width: 278px !important;
+    }
+    header .about .video::after {
+        margin-top: -13px;
+        margin-right: -45px;
+    }
+    header .about .video::before {
+        right: 47%;
+        top: 58%;
+    }
+    header .about .video::before {
+        content: "";
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        width: 120px;
+        height: 120px;
+        border: 3px solid #fff;
+        margin-right: -70px;
+        margin-top: -35px;
+        border-radius: 50%;
+    }
+    section.insta h2:first-of-type {
+        font-family: "PFDinCondensedRegular";
+        font-size: 45px;
+        text-align: left;
+        padding-left: 0;
+        padding-top: 76px;
+        letter-spacing: 16px;
+        color: #292929;
+        text-transform: uppercase;
+    }
+    section.insta .images {
+        margin-top: 55px;
+        margin-left: 0;
+        left: 0;
+        position: relative;
+    }
+    section.insta .images .container {
+        width: 100%;
+        margin-right: 2px;
+        overflow: hidden;
+    }
+    section.insta h2:last-of-type {
+        font-family: "PFDinCondensedRegular";
+        font-size: 44px;
+        padding-top: 70px;
+        text-align: left;
+        padding-left: 0;
+        white-space: pre-line;
+        letter-spacing: 16px;
+        color: #292929;
+        text-transform: uppercase;
+    }
+    section.insta .slider {
+        width: 70%;
+        padding: 0px 53px;
+        margin: 60px auto 0 auto;
+        overflow: hidden;
+    }
+    section.insta .owl-carousel .owl-next {
+        right: -29px;
+    }
+    section.insta .owl-carousel .owl-prev {
+        left: -52px;
+    }
+    .blog__back-a {
+        position: absolute;
+        top: 300px;
+    }
+    .hash-blog {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: none;
+        padding-top: 10px;
+    }
+    .hash-blog__1 {
+        order: 1;
+        padding-top: 10px;
+    }
+    .blog__h1 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header h2.mob {
+        font-family: "PFDinCondensedRegular";
+        font-size: 35px;
+        left: 0;
+        display: inline-block;
+        float: left;
+        position: relative;
+        text-align: center;
+        padding-top: 65px;
+        letter-spacing: 25px;
+        line-height: 40px;
+        color: #fff;
+        white-space: pre-line;
+        text-transform: uppercase;
+    }
+    header h2.mob span {
+        font-family: "dinpro-black";
+        font-size: 18px;
+        position: relative;
+        left: 50px;
+        letter-spacing: 9px;
+        color: #878787;
+    }
+    header h2.mob span:before {
+        content: "&";
+        position: absolute;
+        color: #fff;
+        margin-left: -40px;
+        margin-top: 20px;
+        font-family: "dinpro-black";
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 368px) {
+    header .mob p {
+        padding: 35px 0 10px 20%;
+    }
+    header .mob p:last-child {
+        padding: 35px 25% 20px 0;
+        clear: both;
+    }
+    .projects {
+        height: 700px;
+        padding: 0 46px 0 10px;
+    }
+    .projects .owl-carousel .owl-item {
+        margin-right: 35px !important;
+    }
+}
+
+@media screen and (max-width: 337px) {
+    header .top-line .search {
+        margin-top: 10px;
+    }
+}
