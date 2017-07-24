@@ -33,6 +33,7 @@ main .main__h1{font-size:2.5rem;font-weight:700;padding-bottom:50px}
 .spec__h3{font-size:1.25rem}
 .spec__h3-relative{padding-bottom:30px}
 .spec__b{color:#0d0d0d;font-weight:600}
+.spec__p {padding-top:20px;}
 .left-b{padding-left:40px!important}
 .spec__span{color:#ababab}
 .all-spec__commun-relative{padding-left:45px}
