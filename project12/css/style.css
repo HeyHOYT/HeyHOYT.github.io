@@ -331,6 +331,7 @@ a {
   border-radius: 50px;
   padding: 10px 30px;
   font-weight: 600;
+  cursor:pointer;
 }
 .center-text__btn-relative {
   margin-bottom: 100px;
