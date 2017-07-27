@@ -1,12 +1,12 @@
-@columns: 24;
-@offset: 10px;
+@columns: 12;
+@offset: 30px;
 @offset_one_side: (@offset / 2);
 @atom: (100% / @columns);
 
-@break_lg: 1580px;
-@break_md: 950px;
-@break_sm: 600px;
-@break_xs: 400px;
+@break_lg: 1100px;
+@break_md: 960px;
+@break_sm: 780px;
+@break_xs: 560px;
 
 .reset() {
     body,
@@ -109,9 +109,9 @@
 }
 
 .container() {
-    max-width: 1575px;
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 1200px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin: 0 auto;
 
     @media screen and (max-width: @break_lg) {
@@ -120,8 +120,8 @@
     }
 
     @media screen and (max-width: @break_md) {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     @media screen and (max-width: @break_sm) {
@@ -130,8 +130,8 @@
     }
 
     @media screen and (max-width: @break_xs) {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -461,7 +461,7 @@
 
     >div {
         height: inherit;
-        .wrapper();
+        .container();
 
         >div {
             height: inherit;
