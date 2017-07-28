@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="menu">
+        <a href="#" class="menu-a">
+        <span class="menu-span"></span>
+        </a>
+    </div>
+    <div class="container">
+        <div class="text">
+            <div class="block" id="one">
+                1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat autem, culpa eius labore tenetur odit quod beatae vero ipsa id voluptatibus dolorum! Mollitia tempora exercitationem odit corrupti sequi officiis ipsa magni, eaque ut quidem, officia quod, aliquam enim, libero distinctio! Laboriosam optio eligendi vero quae unde iure saepe reprehenderit, nam pariatur in, eaque odio perspiciatis consectetur ab voluptates ratione nesciunt possimus, alias rerum architecto. Quaerat labore blanditiis, quidem quibusdam, est harum eaque impedit fugit aliquid soluta, enim. Cumque esse reprehenderit ipsum, maiores officia eveniet omnis et placeat aliquam tenetur illum ipsam iusto aperiam ex culpa similique cum animi, porro libero.
+            </div>
+            <div class="block" id="two">
+                2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat autem, culpa eius labore tenetur odit quod beatae vero ipsa id voluptatibus dolorum! Mollitia tempora exercitationem odit corrupti sequi officiis ipsa magni, eaque ut quidem, officia quod, aliquam enim, libero distinctio! Laboriosam optio eligendi vero quae unde iure saepe reprehenderit, nam pariatur in, eaque odio perspiciatis consectetur ab voluptates ratione nesciunt possimus, alias rerum architecto. Quaerat labore blanditiis, quidem quibusdam, est harum eaque impedit fugit aliquid soluta, enim. Cumque esse reprehenderit ipsum, maiores officia eveniet omnis et placeat aliquam tenetur illum ipsam iusto aperiam ex culpa similique cum animi, porro libero.
+            </div>
+            <div class="block" id="tree">
+                3Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat autem, culpa eius labore tenetur odit quod beatae vero ipsa id voluptatibus dolorum! Mollitia tempora exercitationem odit corrupti sequi officiis ipsa magni, eaque ut quidem, officia quod, aliquam enim, libero distinctio! Laboriosam optio eligendi vero quae unde iure saepe reprehenderit, nam pariatur in, eaque odio perspiciatis consectetur ab voluptates ratione nesciunt possimus, alias rerum architecto. Quaerat labore blanditiis, quidem quibusdam, est harum eaque impedit fugit aliquid soluta, enim. Cumque esse reprehenderit ipsum, maiores officia eveniet omnis et placeat aliquam tenetur illum ipsam iusto aperiam ex culpa similique cum animi, porro libero.
+            </div>
+            <div class="block" id="four">
+                4Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat autem, culpa eius labore tenetur odit quod beatae vero ipsa id voluptatibus dolorum! Mollitia tempora exercitationem odit corrupti sequi officiis ipsa magni, eaque ut quidem, officia quod, aliquam enim, libero distinctio! Laboriosam optio eligendi vero quae unde iure saepe reprehenderit, nam pariatur in, eaque odio perspiciatis consectetur ab voluptates ratione nesciunt possimus, alias rerum architecto. Quaerat labore blanditiis, quidem quibusdam, est harum eaque impedit fugit aliquid soluta, enim. Cumque esse reprehenderit ipsum, maiores officia eveniet omnis et placeat aliquam tenetur illum ipsam iusto aperiam ex culpa similique cum animi, porro libero.
+            </div>
+            <div class="block" id="five">
+                5Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat autem, culpa eius labore tenetur odit quod beatae vero ipsa id voluptatibus dolorum! Mollitia tempora exercitationem odit corrupti sequi officiis ipsa magni, eaque ut quidem, officia quod, aliquam enim, libero distinctio! Laboriosam optio eligendi vero quae unde iure saepe reprehenderit, nam pariatur in, eaque odio perspiciatis consectetur ab voluptates ratione nesciunt possimus, alias rerum architecto. Quaerat labore blanditiis, quidem quibusdam, est harum eaque impedit fugit aliquid soluta, enim. Cumque esse reprehenderit ipsum, maiores officia eveniet omnis et placeat aliquam tenetur illum ipsam iusto aperiam ex culpa similique cum animi, porro libero.
+            </div>
+        </div>
+    </div>
+    <ul class="men ">
+        <li><a href="#one">Главная</a></li>
+        <li><a href="#two">О нас</a></li>
+        <li><a href="#tree">Портфолио</a></li>
+        <li><a href="#four">Партнёры</a></li>
+        <li><a href="#five">Контакты</a></li>
+    </ul>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function() {
+        var menu_a = $('.menu-a');
+        var men = $('.men');
+        var active = $('.menu-a__active');
+
+        menu_a.click(function() {
+            menu_a.toggleClass('menu-a__active');
+            men.toggleClass('men-active');
+        });
+    });
+    </script>
+</body>
+
+</html>
