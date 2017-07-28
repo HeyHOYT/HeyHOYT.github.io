@@ -1,0 +1,182 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul li {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+legend {
+  color: #000;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 965px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1100px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: 'Ubuntu', 'Arial', sans-serif;
+  text-align: center;
+}
+header .header-ask {
+  text-transform: uppercase;
+  color: #0bbaf0;
+  line-height: 35px;
+  padding-top: 80px;
+}
+header .header-ask .ask-h1 {
+  font-weight: bold;
+  font-size: 2.25rem;
+}
+header .header-ask .ask-h2 {
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+.accord {
+  padding-top: 55px;
+}
+.accord-block .b-accord {
+  display: block;
+  font-size: 1.4375rem;
+  background-color: #0bbaf0;
+  color: #fff;
+  padding: 25px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.accord-block .p-accord {
+  font-size: 1.375rem;
+  max-width: 850px;
+  text-align: left;
+  margin: 0px auto;
+  border: 5px solid #dcdcdc;
+  border-top: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px 30px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}

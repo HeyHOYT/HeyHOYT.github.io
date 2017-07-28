@@ -1,0 +1,64 @@
+@import url('smart-grid.less');
+.reset();
+.container {
+    .container();
+}
+
+@rem: 1rem/16px;
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Ubuntu', 'Arial', sans-serif;
+    text-align: center;
+    .header-ask {
+        text-transform: uppercase;
+        color: #0bbaf0;
+        line-height: 35px;
+        padding-top: 80px;
+        .ask {
+            &-h1 {
+                font-weight: bold;
+                font-size: @rem * 36;
+            }
+            &-h2 {
+                font-weight: normal;
+                font-size: @rem * 24;
+            }
+        }
+    }
+}
+
+.accord {
+    padding-top: 55px;
+    &-block {
+        .b-accord {
+            display: block;
+            font-size: @rem * 23;
+            background-color: #0bbaf0;
+            color: #fff;
+            padding: 25px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .p-accord {
+            font-size: @rem * 22;
+            max-width: 850px;
+            text-align: left;
+            margin: 0px auto;
+            border: 5px solid #dcdcdc;
+            border-top: none;
+            display: flex;
+            justify-content: center;
+            padding: 25px 30px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+    }
+}
