@@ -69,13 +69,14 @@
             $('.p-accord').slideUp();
 
             $(this).next().not('visible').slideDown();
-        });
-        if($(this).next().is(':visible')) {
-        $(this).next().slideUp();
-        }
-        else {
+            if($(this).next().is(':visible')) {
+            $(this).next().slideUp();
+            }
+             else {
            $(this).next().not('visible').slideDown(); 
-        }
+            }
+            });
+
 });
 
     });
