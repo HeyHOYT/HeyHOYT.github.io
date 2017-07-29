@@ -70,6 +70,13 @@
 
             $(this).next().not('visible').slideDown();
         });
+        if($(this).next().is(':visible')) {
+        $(this).next().slideUp();
+        }
+        else {
+           $(this).next().not('visible').slideDown(); 
+        }
+});
 
     });
     </script>
