@@ -205,6 +205,8 @@ form:after {
 
 label.error {
     color: red;
+    position: absolute;
+    left: 80px;
 }
 
 @media (max-width: 900px) {

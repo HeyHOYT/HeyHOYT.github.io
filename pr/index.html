@@ -68,6 +68,10 @@
                 required: true,
                 minlength: 7,
                 email: true
+            },
+            pass: {
+                required: true,
+                minlength: 3,
             }
         },
         messages: {
@@ -79,6 +83,10 @@
                 required: 'Это поле обязательно',
                 minlength: 'Не менее 7 символов',
                 email: 'Введите корректный email'
+            },
+            pass: {
+                required: 'Это поле обязательно',
+                minlength: 'Не менее 3-х символов'
             }
         }
     });
