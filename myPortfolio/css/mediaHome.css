@@ -8,7 +8,7 @@
     h1 {
         font-size: 6.5rem;
     }
-    .hello + p {
+    .hello+p {
         font-size: 3.1rem;
     }
     .block-text___ {
@@ -56,7 +56,7 @@
     .block-circle:nth-child(1) {
         margin-left: 0px;
     }
-    .hello + p {
+    .hello+p {
         font-size: 35px;
     }
     .block-text___ {
@@ -78,7 +78,7 @@
     .hello {
         font-size: 3rem;
     }
-    .hello + p {
+    .hello+p {
         font-size: 2rem;
     }
     .block-circle {
