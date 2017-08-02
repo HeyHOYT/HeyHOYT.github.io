@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <ul id="scene">
+        <li data-depth="0.00" class="layer"><img src="images/1.png"></li>
+        <li data-depth="0.20"><img src="images/1.png"></li>
+        <li data-depth="0.40"><img src="images/1.png"></li>
+        <li data-depth="0.60"><img src="images/1.png"></li>
+        <li data-depth="0.80"><img src="images/1.png"></li>
+        <li data-depth="1.00"><img src="images/1.png"></li>
+    </ul>
+    <script src="js/jq.js" defer></script>
+    <script src="js/jquery.parallax.js" defer></script>
+    <script>
+    $(document).ready(function() {
+        var scene = $('#scene');
+        var parallax = new Parallax(scene);
+        scene.parallax();
+    });
+    </script>
+</body>
+
+</html>
