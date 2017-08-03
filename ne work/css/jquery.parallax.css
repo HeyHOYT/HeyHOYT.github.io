@@ -1,0 +1,11 @@
+.parallax-viewport {
+    background: rgb(47, 49, 52);
+    margin: 1.5em 0px;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+}
+
+.parallax-layer {
+    position: absolute;
+}

@@ -5,28 +5,61 @@
     <meta charset="UTF-8" />
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="css/fonts.css">
-    <link rel="stylesheet" href="css/reset.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Ubuntu:300i,400,500" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <ul id="scene">
-        <li data-depth="0.00" class="layer"><img src="images/1.png"></li>
-        <li data-depth="0.20"><img src="images/1.png"></li>
-        <li data-depth="0.40"><img src="images/1.png"></li>
-        <li data-depth="0.60"><img src="images/1.png"></li>
-        <li data-depth="0.80"><img src="images/1.png"></li>
-        <li data-depth="1.00"><img src="images/1.png"></li>
-    </ul>
-    <script src="js/jq.js" defer></script>
-    <script src="js/jquery.parallax.js" defer></script>
+    <section class="preheader">
+        <div class="container flex">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <nav class="preheader-nav">
+                <ul class="preheader-ul">
+                    <li class="li">how it</li>
+                    <li class="li">works</li>
+                    <li class="li">about us</li>
+                    <li class="li">contact us</li>
+                    <li class="li">blog</li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <header>
+        <div class="container">
+            <div id="scene">
+                <div class="layer cloud_1" data-depth="0.40">
+                    <img src="images/1.png" alt="">
+                </div>
+                <div class="layer cloud_2" data-depth="0.40">
+                    <img src="images/2.png" alt=" ">
+                </div>
+                <div class="layer cloud_3 " data-depth="0.40 "><img src="images/3.png " alt=" "></div>
+                <div class="layer cloud_4 " data-depth="0.40 "><img src="images/4.png " alt=" "></div>
+            </div>
+            <div class="flex-container">
+                <div class="left-flex">
+                    <h1>track your next <br>fuel shops</h1>
+                    <p class="l-i">Monitor and Alert on all petrol bunks near to you</p>
+                    <p class="free">Signup For <span class="span-free">free</span></p>
+                    <input type="text" placeholder="You E-mail Address">
+                    <button type="submit">signup</button>
+                </div>
+                <div class="hand">
+                    <img src="images/hand.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--    SCRIPTS   -->
+    <script src="js/parallax.js "></script>
     <script>
-    $(document).ready(function() {
-        var scene = $('#scene');
-        var parallax = new Parallax(scene);
-        scene.parallax();
-    });
+    // Elements
+    var scene = document.getElementById('scene');
+
+    // Pretty simple huh?
+    var parallax = new Parallax(scene);
     </script>
 </body>
 
