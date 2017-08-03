@@ -114,6 +114,11 @@
     width: 200px;
   }
 }
+@media (min-width:350px) and (max-width:370px) {
+    main .container {
+        margin-left: 20px !important;
+    }
+}
 @media screen and (max-width: 395px) {
   .full-block {
     width: 300px;
