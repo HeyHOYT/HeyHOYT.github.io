@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <div id="map">
+        <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap,
+            myPlacemark;
+
+        function init() {
+            myMap = new ymaps.Map("map", {
+                center: [55.755814, 37.617635],
+                zoom: 7
+            });
+
+            myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+                hintContent: 'мой носок',
+                balloonContent: 'Столица России'
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: 'images/map-marker.svg',
+                // Размеры метки.
+                iconImageSize: [30, 42],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-15, -40]
+            });
+            myMap.geoObjects.add(myPlacemark);
+        }
+        </script>
+        <form action="#">
+            <div class="container">
+                <h1>Contact</h1>
+                <div class=" inp inp-1-block inp-1-block">
+                    <input type="text" class="inp inp-1" placeholder="Your Email">
+                </div>
+                <div class="inp-1-block-2 inp-1-block">
+                    <input type="text" class="inp inp-2" placeholder="Company">
+                    <input type="text" class="inp inp-2-relative" placeholder="Subject">
+                </div>
+                <div class="inp inp-1-block-3 inp-1-block">
+                    <input type="text" class="inp inp-3" placeholder="Your messages">
+                </div>
+                <button type="button">
+                    send message
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
