@@ -1,0 +1,264 @@
+ul {
+    list-style: none;
+    display: flex;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+header {
+    color: #fff;
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-top: 35px;
+}
+
+.logo picture {
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.logo picture:first-child {
+    margin-left: 0px;
+}
+
+.logo-span {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.logo-span--relative {
+    padding-left: 20px;
+}
+
+.center-text--h1 {
+    font-weight: normal;
+    text-align: center;
+    padding-top: 285px;
+    font-size: 38px;
+}
+
+.header-ul {
+    max-width: 800px;
+    margin: 0px auto;
+    justify-content: space-between;
+    margin-top: 265px;
+    height: 50px;
+}
+
+.header-ul a {
+    color: #fff;
+    width: 115%;
+    text-align: center;
+    display: block;
+}
+
+.header-ul a:hover {
+    border-bottom: 3px solid #1bf1ad;
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+.block-c {
+    text-align: center;
+}
+
+.digital-h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 110px;
+    padding-bottom: 30px;
+}
+
+.digital-p {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.img-digital {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.img-digital--left,
+.img-digital--right {
+    position: relative;
+}
+
+.p-text-left {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 35px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #303030;
+}
+
+.img-digital--right {
+    margin-right: 150px;
+    text-transform: uppercase;
+}
+
+.digital-h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.digital-b {
+    font-size: 75px;
+    font-weight: 700;
+    color: #303030;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+
+
+.digital-b.digital-b__2 {
+    display: block;
+    text-align: center;
+    padding-top: 165px;
+    position: relative;
+    top: 50%;
+}
+
+.arrow-red {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.create {
+    position: relative;
+}
+
+.container-digital {
+    position: absolute;
+    top: -120px;
+    left: -55px;
+}
+
+.owl-carousel {
+    width: 94%;
+    padding-left: 100px;
+    margin-bottom: 190px;
+}
+
+.owl-carousel img {
+    height: 440px;
+    margin-top: 110px;
+}
+
+footer {
+    max-width: 1200px;
+    margin: 0px auto;
+    text-transform: uppercase;
+    padding-bottom: 100px;
+}
+
+.block-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-footer {
+    display: flex;
+    font-size: 18px;
+    border: 1px solid black;
+    width: 170px;
+    padding: 5px;
+    justify-content: center;
+}
+
+.logo-footer img {
+    margin-left: 5px;
+}
+
+.logo-footer img:first-child {
+    margin-left: 0px;
+}
+
+.block-phone {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-span {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.footer-span-relative {
+    padding-right: 10px;
+}
+
+.footer-soc__right {
+    width: 215px;
+}
+
+.block-phone {
+    width: 215px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.footer-mail {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.footer-mail-relative {
+    padding-right: 20px;
+}
+
+.block-footer--2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.block-phone img {
+    height: 15px;
+    display: table-cell;
+}
+
+.footer-ul {
+    width: 800px;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.block-ul-footer {
+    display: flex;
+    justify-content: space-between;
+}
