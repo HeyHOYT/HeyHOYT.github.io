@@ -24,6 +24,7 @@ body {
 header {
     color: #fff;
     background-image: url(../images/bg.png);
+    background-color:#b3b3b3;
     background-size: cover;
     background-repeat: no-repeat;
     text-transform: uppercase;
