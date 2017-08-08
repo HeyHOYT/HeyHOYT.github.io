@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- Yandex.Metrika informer -->
+    <div class="informer">
+        <a href="https://metrika.yandex.ru/stat/?id=45560121&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/45560121/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="45560121" data-lang="ru" /></a>
+    </div>
+    <!-- /Yandex.Metrika informer -->
+    <div class="wrapper">
+        <form action="thanks.html" class="form" method="post" onsubmit="yaCounter45560121.reachGoal('main__form')">
+            <input type="hidden" value="form-mail" name="form">
+            <div class="container flex">
+                <div class="form-block">
+                    <img src="images/img.jpg" alt="">
+                </div>
+                <div class="block__save">
+                    <b class="block__save-b">Сохрани свой аккаунт</b>
+                    <p class="block__save-p">Получи бесплатно неограниченное количество
+                        <br> форм, вопросов и ответов.
+                    </p>
+                    <div class="block-input">
+                        <input type="text" placeholder="Имя или никнейм" name="name" class="input-name">
+                    </div>
+                    <div class="block-input inp-2">
+                        <input type="text" placeholder="Email" name="mail" class="input-mail">
+                    </div>
+                    <div class="block-input inp-3">
+                        <input type="text" placeholder="Пароль" name="pass" class="input-pass">
+                    </div>
+                    <button class="block__save-btn" type="button">
+                        <span class="save-span">Сохранить</span>
+                    </button>
+                    <span class="block__save-span">
+                    Уже есть аккаунт? <span class="welcome">Войти</span>
+                    </span>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/js.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function(d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter45560121 = new Ya.Metrika({
+                    id: 45560121,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: true
+                });
+            } catch (e) {}
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function() { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/45560121" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <script src="js/validate.js"></script>
+    <script>
+    $(document).ready(function() {
+        var btn = $('.block__save-btn');
+        btn.click(function() {
+            var name = $('.input-name').val();
+            var mail = $('.input-mail').val();
+            var pass = $('.input-pass').val();
+            var form = $('.form');
+            if (name !== '' & mail !== '' & pass !== '') {
+                form.submit();
+            } else {
+                alert('Не все поля заполнены');
+            }
+        });
+    });
+    $('.form').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 3
+            },
+            mail: {
+                required: true,
+                minlength: 7,
+                email: true
+            },
+            pass: {
+                required: true,
+                minlength: 3,
+            }
+        },
+        messages: {
+            name: {
+                required: 'Это поле обязательно',
+                minlength: 'Не менее 2-х символов'
+            },
+            mail: {
+                required: 'Это поле обязательно',
+                minlength: 'Не менее 7 символов',
+                email: 'Введите корректный email'
+            },
+            pass: {
+                required: 'Это поле обязательно',
+                minlength: 'Не менее 3-х символов'
+            }
+        }
+    });
+    </script>
+</body>
+
+</html>
