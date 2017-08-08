@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.wrapper {
+    background-color: #6cafad;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 150px 15px 50px 15px;
+}
+
+.informer a {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+
+.informer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.container {
+    max-width: 870px;
+    margin: 0px auto;
+}
+
+input {
+    border: 0;
+    border-bottom: 1px solid #888;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+input:hover,
+:active,
+:focus {
+    outline: none;
+}
+
+input {
+    position: relative;
+}
+
+input[placeholder] {
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+
+
+
+.form-block img {
+    height: auto;
+    max-width: 100%;
+}
+
+form {
+    min-width: 55%;
+    max-width: 1000px;
+    background-color: #fff;
+    position: relative;
+    padding: 95px 60px;
+    margin: 0px auto;
+    padding-bottom: 100px;
+}
+
+form:before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/ball-2.png);
+    bottom: -55px;
+    left: 80%;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 40px;
+}
+
+form:after {
+    content: '';
+    position: absolute;
+    height: 90px;
+    width: 40px;
+    right: 80%;
+    top: -55px;
+    background-image: url(../images/ball-1.png);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block__save {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.block__save-btn {
+    background-color: #82c5c3;
+    color: #fff;
+    padding: 15px 35px;
+    margin: 40px 0px;
+}
+
+.block__save-span {
+    width: 100%;
+    text-align: left;
+}
+
+.block__save-b {
+    font-size: 24px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+.block__save-p {
+    padding-bottom: 80px;
+    line-height: 20px;
+}
+
+.save-span {
+    position: relative;
+}
+
+.block-input {
+    width: 100%;
+    position: relative;
+}
+
+.block-input:after {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    background-image: url(../images/icon-1.jpg);
+    background-repeat: no-repeat;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-5px);
+}
+
+.block-input.inp-3:after {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    background-image: url(../images/icon-3.jpg);
+    background-repeat: no-repeat;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-5px);
+}
+
+.block-input.inp-2:after {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    background-image: url(../images/icon-2.jpg);
+    background-repeat: no-repeat;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-5px);
+}
+
+.save-span:after {
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-5px);
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    height: 10px;
+    width: 10px;
+}
+
+.welcome {
+    color: #f69a7a;
+}
+
+.wrap-thanks {
+    background-color: #6cafad;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.thanks {
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #f15b5b;
+    font-family: "Open Sans";
+    font-weight: 900;
+}
+
+
+label.error {
+    color: red;
+    position: absolute;
+    left: 80px;
+}
+
+@media (max-width: 900px) {
+    .block__save {
+        margin-left: 30px;
+    }
+}
+
+
+@media (max-width: 780px) {
+    .block__save-b {
+        font-size: 20px;
+    }
+    .block__save-p {
+        width: 120%;
+    }
+    .block__save-btn {
+        padding: 10px 25px;
+    }
+    .block__save-span {
+        font-size: 15px;
+    }
+    input[placeholder] {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 705px) {
+    .block__save-b {
+        font-size: 17px;
+    }
+    .block__save-p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 515px) {
+    .form-block img {
+        display: none;
+    }
+    form {
+        padding: 50px 60px;
+    }
+}
+
+@media (max-width: 320px) {
+    form {
+        padding: 30px 60px !important;
+        margin-top: 0;
+    }
+}
