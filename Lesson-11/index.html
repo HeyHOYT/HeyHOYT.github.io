@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <section>
+            <div class="close">&times;</div>
+            <div class="container">
+                <img src="images/chair.jpg" alt="">
+                <div class="desk">
+                    <h1>Стул “Венеция”</h1>
+                    <b>ограниченный выпуск</b>
+                    <div class="block">
+                        <span class="price">4 250 р.</span>
+                        <img src="images/voice.jpg" alt="">
+                    </div>
+                    <img src="images/" alt="">
+                    <p>Сайт рыбатекст поможет дизайнеру,
+                        <br> верстальщику, вебмастеру сгенерировать
+                        <br> несколько абзацев более менее осмысленного
+                        <br> текста рыбы на русском языке, а начинающему
+                        <br> оратору отточить навык публичных выступлений
+                        <br> в домашних условиях. При создании генератора</p>
+                    <div class="block-arrow">
+                        <img src="images/left.jpg" alt="" class="click">
+                        <span class="arrow">0</span>
+                        <img src="images/right.jpg" alt="" class="click2">
+                    </div>
+                    <a href="https://glopart.ru/buy/178473" class="glopart-buy-btn" target="_blank">Добавить в корзину</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function() {
+        var arrow_1 = $('.arrow'),
+            arrow = 1,
+            click2 = $('.click2'),
+            click = $('.click');
+        click2.click(function() {
+            var a = arrow_1.text(arrow);
+            arrow++;
+            console.log(arrow);
+        });
+        click.click(function() {
+            if (arrow <= 2) {
+                arrow = 2;
+            };
+            arrow--;
+            var a = arrow_1.text(arrow - 1);
+            console.log(arrow);
+        });
+    });
+
+    </script>
+</body>
+
+</html>
