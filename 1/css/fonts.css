@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'PT Sans Caption';
+    src: url('../fonts/PTSans-Caption.woff') format('woff'),
+    url('../fonts/PTSans-Caption.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Parangon 430C';
+    src: url('../fonts/Parangon430C.woff') format('woff'),
+    url('../fonts/Parangon430C.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
