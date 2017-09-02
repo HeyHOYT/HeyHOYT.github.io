@@ -1,0 +1,276 @@
+@media (max-width: 1199px) {
+  .slide {
+    max-width: 750px;
+  }
+  .right {
+    padding: 30px;
+    padding-left: 100px;
+  }
+  .right p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 992px) {
+  .block-photos__ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .advant-item {
+    margin-top: 20px;
+  }
+  html {
+    font-size: 13px;
+  }
+  .price-ul li {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .price-item button {
+    width: 92%;
+    font-size: 1.1rem;
+  }
+  .price-item {
+    height: 540px;
+  }
+}
+@media (max-width: 950px) {
+  .rev-img {
+    right: -35px;
+  }
+  .rev-img img {
+    width: 70% !important;
+    height: auto;
+  }
+  .right {
+    margin-right: 100px;
+    padding-left: 15px;
+  }
+  .numb {
+    right: 35%;
+  }
+}
+@media (max-width: 770px) {
+  .rev-img {
+    display: none;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .form-inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 500px;
+  }
+  .form-inputs input,
+  .form-inputs button {
+    margin-top: 10px;
+  }
+  html {
+    font-size: 14px;
+  }
+  .logo img {
+    height: auto;
+    max-width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .media-top {
+    margin-top: 47px;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+  .gallery-media {
+    max-width: 90%;
+    height: auto;
+  }
+  .price-ul li {
+    font-size: 15px;
+  }
+  .price-b {
+    font-size: 17px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .h1-span {
+    font-size: 1.9rem;
+  }
+  .slide {
+    max-width: 130%;
+  }
+  .slide p {
+    font-size: 1.2rem;
+  }
+  .owl-dots {
+    bottom: 2px;
+    right: 40%;
+  }
+  .owl-dots .owl-dot {
+    height: 13px;
+    width: 13px;
+  }
+  .block-inside,
+  .block-inside-2,
+  .block-inside-3,
+  .block-inside-4,
+  .block-inside-5,
+  .block-inside-6,
+  .block-inside-7 {
+    top: 6%;
+    padding: 120px 80px;
+  }
+  .block-inside-2 {
+    top: 71%;
+    padding: 30px 30px;
+  }
+  .block-inside-3 {
+    top: 6%;
+    padding: 20px 30px;
+  }
+  .block-inside-4 {
+    top: 40%;
+    padding: 20px 20px;
+  }
+  .block-inside-5 {
+    top: 40%;
+    padding: 20px 20px;
+  }
+  .block-inside-6 {
+    top: 73%;
+    padding: 20px 20px;
+  }
+  .block-inside-7 {
+    top: 73%;
+    padding: 20px 20px;
+  }
+}
+@media (max-width: 420px) {
+  .block-inside,
+  .block-inside-2,
+  .block-inside-3,
+  .block-inside-4,
+  .block-inside-5,
+  .block-inside-6,
+  .block-inside-7 {
+    top: 12%;
+    padding: 70px 30px;
+  }
+  .block-inside-2 {
+    top: 72%;
+    padding: 10px 10px;
+  }
+  .block-inside-3 {
+    top: 6%;
+    padding: 10px 10px;
+  }
+  .block-inside-4 {
+    top: 40%;
+    padding: 10px 10px;
+  }
+  .block-inside-5 {
+    top: 40%;
+    padding: 10px 10px;
+  }
+  .block-inside-6 {
+    top: 73%;
+    padding: 10px 10px;
+  }
+  .block-inside-7 {
+    top: 73%;
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 400px) {
+  .block-event img {
+    height: 90%;
+    width: 100%;
+  }
+  header button {
+    padding: 15px 40px;
+  }
+  h1 {
+    font-size: 2.3rem;
+  }
+  .h1-span {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 350px) {
+  .block-inside,
+  .block-inside-2,
+  .block-inside-3,
+  .block-inside-4,
+  .block-inside-5,
+  .block-inside-6,
+  .block-inside-7 {
+    top: 12%;
+    padding: 40px 30px;
+    width: 70%;
+    height: 200px;
+    left: 18%;
+  }
+  .block-inside-2 {
+    top: 71%;
+    padding: 5px 5px;
+    width: 50%;
+    height: 120px;
+    left: 25%;
+  }
+  .block-inside-3 {
+    top: 4.5%;
+    padding: 5px 5px;
+    width: 50%;
+    height: 120px;
+    left: 25%;
+  }
+  .block-inside-4 {
+    top: 37%;
+    padding: 5px 5px;
+    width: 35%;
+    height: 120px;
+    left: 10%;
+  }
+  .block-inside-5 {
+    top: 37%;
+    padding: 5px 5px;
+    width: 35%;
+    height: 120px;
+    left: 60%;
+  }
+  .block-inside-6 {
+    top: 71%;
+    padding: 5px 5px;
+    width: 35%;
+    height: 120px;
+    left: 10%;
+  }
+  .block-inside-7 {
+    top: 71%;
+    padding: 5px 5px;
+    width: 35%;
+    height: 120px;
+    left: 60%;
+  }
+}
+@media (max-width: 330px) {
+  html {
+    font-size: 11.5px;
+  }
+}
