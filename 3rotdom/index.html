@@ -565,15 +565,13 @@
             })
             btn_order.click(function() {});
         });
-        var a = $('.contact-us').validate({
+        ('form').validate({
             rules: {
                 name: {
                     required: true,
                     minlength: 3
                 },
-                phone: {
-                    required: true
-                }
+                phone: { required: true, minlength: 10, maxlength: 11 }
             },
             messages: {
                 name: {
@@ -581,12 +579,12 @@
                     minlength: ''
                 },
                 phone: {
-                    required: ''
+                    required: '',
+                    minlength: '',
+                    maxlength: ''
                 }
             }
         });
-        console.log(a);
-        $('.number').mask("+9 (999) 9999999");
     });
 
     </script>
