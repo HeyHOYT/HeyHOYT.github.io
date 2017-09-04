@@ -15,15 +15,16 @@
 
 <body>
     <div class="wrapper"> <a href="#" class="close-modal"></a>
-        <form action="#" class="modal-1 modal-one" method="get">
+        <form action="#" class="modal-1 modal-one contact-us1" method="get">
+        <input type="hidden" name="popup-usluga">
             <div class="close">&times;</div>
             <div class="form-inputs form-modal d-flex justify-content-between">
-                <input type="name" placeholder="Имя" name="name">
+                <input type="name" placeholder="Имя" name="name" class="name-input">
                 <input type="phone" placeholder="Номер" class="number" name="phone">
                 <button type="submit" id="btn-order">заказать</button>
             </div>
         </form>
-        <form action="" class="modal-1 modal-2">
+        <form id='form-modal' action="" class="modal-1 modal-2">
             <div class="close">&times;</div>
             <div class="form-inputs form-modal d-flex justify-content-between">
                 <img src="images/vist.png" alt="" width="100">
@@ -115,14 +116,15 @@
                 </div>
             </div>
             <div class="container-fluid">
-                <form action="#" class="contact-us">
+                <form  action="" class="contact-us contact-us2" method="get">
+                <input type="hidden" name="contact-us">
                     <b class="form-b form-b-relative">Заказать выписку из роддома</b>
                     <p class="form-p">Заполните форму и мы организуем выписку из роддома
                         <br> полностью за Вас!</p>
                     <div class="form-inputs d-flex justify-content-between">
                         <input type="name" placeholder="Имя" name="name">
                         <input type="phone" placeholder="Телефон" class="img-number number" name="phone">
-                        <button type="button">отправить</button>
+                        <button type="submit">отправить</button>
                     </div>
                 </form>
             </div>
@@ -290,13 +292,14 @@
         </section>
         <section class="remb_day">
             <div class="container-fluid">
-                <form action="#" class="contact-us">
+                <form action="#" class="contact-us contact-us3">
+                <input type="hidden" name="contact-us">
                     <b class="form-b form-b-relative">Вы запомните этот день на всю жизнь! Доверьтесь нам!</b>
                     <p class="form-p">Заполни заявку и мы расскажем, как сделать встречу любимой жены
                         <br> и ребенка незабываемой!!</p>
                     <div class="form-inputs form-inputs-2 d-flex justify-content-between">
-                        <input type="name" placeholder="Имя">
-                        <input type="phone" placeholder="Телефон" class="img-number number">
+                        <input type="name" placeholder="Имя" name="name">
+                        <input type="phone" placeholder="Телефон" class="img-number number" name="phone">
                         <button type="submit">заказать звонок</button>
                     </div>
                 </form>
@@ -365,14 +368,15 @@
         </section>
         <section class="remb_day">
             <div class="container-fluid">
-                <form action="#" class="contact-us">
+                <form action="#" class="contact-us contact-us4">
+                <input type="hidden" name="contact-us">
                     <b class="form-b form-b-relative">Вам не нужно договариваться за оператора, фотографа, кондитера - <br>
 Мы сделаем это за Вас!</b>
                     <p class="form-p">Заполни заявку и мы расскажем, как сделать встречу любимой жены
                         <br> и ребенка незабываемой!</p>
                     <div class="form-inputs form-inputs-2 d-flex justify-content-between">
-                        <input type="name" placeholder="Имя">
-                        <input type="phone" placeholder="Телефон" class="img-number number">
+                        <input type="name" placeholder="Имя" name="name">
+                        <input type="phone" placeholder="Телефон" class="img-number number" name="phone">
                         <button type="submit">заказать звонок</button>
                     </div>
                 </form>
@@ -472,13 +476,14 @@
         </section>
         <section class="remb_day">
             <div class="container-fluid">
-                <form action="#" class="contact-us">
+                <form action="#" class="contact-us contact-us5">
+                <input type="hidden" name="contact-us">
                     <b class="form-b form-b-relative">У вас остались вопросы?</b>
                     <p class="form-p">Заполни заявку и мы расскажем, как сделать встречу любимой жены
                         <br> и ребенка незабываемой!</p>
                     <div class="form-inputs form-inputs-2 d-flex justify-content-between">
-                        <input type="name" placeholder="Имя">
-                        <input type="phone" placeholder="Телефон" class="img-number number">
+                        <input type="name" placeholder="Имя" name="name">
+                        <input type="phone" placeholder="Телефон" class="img-number number" name="phone">
                         <button type="submit">заказать звонок</button>
                     </div>
                 </form>
@@ -517,7 +522,7 @@
             close_modal = $('.close-modal'),
             btn_order = $('#btn-order'),
             modal_2 = $('.modal-2'),
-            all_form = $('form');
+            add_order = $('#btn-order.btn-order-2');
         $(".owl-carousel").owlCarousel({
             items: 1,
             dotsEach: true
@@ -539,39 +544,32 @@
 
             close.click(function() {
                 modal_1.css('transform', 'translateY(-50%) translateX(-1000%');
+                $('.modal-1.modal-2').css('transform', 'translateY(-50%) translateX(-1000%');
                 close_modal.css('display', 'none');
-                $(':input', '.modal-1')
-                    .not(':button, :submit, :reset, :hidden')
-                    .val('')
-                    .removeAttr('checked')
-                    .removeAttr('selected')
-                    .css('border', 'none');
             });
             close_modal.click(function() {
-                if (modal_1.hide()) {
+                if (modal_1.hide() || $('.modal-1.modal-2').hide()) {
                     modal_1.css('transform', 'translateY(-50%) translateX(-1000%');
+                    $('.modal-1.modal-2').css('transform', 'translateY(-50%) translateX(-1000%');
                     modal_1.css('display', 'block');
+                    $('.modal-1.modal-2').css('display', 'block');
                     close_modal.css('display', 'none');
-                } else if (modal_1.show()) {
+                } else if (modal_1.show() || $('.modal-1.modal-2').show()) {
                     modal_1.css('transform', 'translateY(-50%) translateX(-50%');
+                   $('.modal-1.modal-2').css('transform', 'translateY(-50%) translateX(-50%');
                     close_modal.css('display', 'block');
                 }
-                $(':input', '.modal-1')
-                    .not(':button, :submit, :reset, :hidden')
-                    .val('')
-                    .removeAttr('checked')
-                    .removeAttr('selected')
-                    .css('border', 'none');
             })
-            btn_order.click(function() {});
         });
-        $('form').validate({
+          $('form').validate({
             rules: {
                 name: {
                     required: true,
                     minlength: 3
                 },
-                phone: { required: true, minlength: 10, maxlength: 11 }
+                phone: {
+                    required: true
+                }
             },
             messages: {
                 name: {
@@ -579,12 +577,98 @@
                     minlength: ''
                 },
                 phone: {
-                    required: '',
-                    minlength: '',
-                    maxlength: ''
+                    required: ''
                 }
             }
         });
+           $('.contact-us.contact-us2').validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 3
+                },
+                phone: {
+                    required: true
+                }
+            },
+            messages: {
+                name: {
+                    required: '',
+                    minlength: ''
+                },
+                phone: {
+                    required: ''
+                }
+            }
+        });
+        $('.contact-us.contact-us3').validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 3
+                },
+                phone: {
+                    required: true
+                }
+            },
+            messages: {
+                name: {
+                    required: '',
+                    minlength: ''
+                },
+                phone: {
+                    required: ''
+                }
+            }
+        });
+            $('.contact-us.contact-us4').validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 3
+                },
+                phone: {
+                    required: true
+                }
+            },
+            messages: {
+                name: {
+                    required: '',
+                    minlength: ''
+                },
+                phone: {
+                    required: ''
+                }
+            }
+        });
+            $('.contact-us.contact-us5').validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 3
+                },
+                phone: {
+                    required: true
+                }
+            },
+            messages: {
+                name: {
+                    required: '',
+                    minlength: ''
+                },
+                phone: {
+                    required: ''
+                }
+            }
+        });
+          btn_order.click(function() {
+            	if ($('.modal-one').hide()) {
+        		$('.modal-1.modal-2').css('transform', 'translateY(-50%) translateX(-50%');
+        	}
+        	else {
+        		$('.modal-1.modal-2').css('transform', 'translateY(-1000%) translateX(-50%');
+        	}
+            });
     });
 
     </script>
