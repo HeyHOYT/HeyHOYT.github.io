@@ -1,13 +1,14 @@
-$("form.contact-us").submit(function(e) { 
+ if ($('input').val().length > 2) {
+$("form.contact-us").submit(function(e) { //устанавливаем событие отправки для формы с id=form
             var close = $('.close'),
             close_modal = $('.close-modal'),
             btn_order = $('#btn-order'),
             modal_2 = $('.modal-2');
     e.preventDefault();
-    var form_data = $('form.contact-us').serialize(); 
+    var form_data = $('form.contact-us').serialize(); //собераем все данные из формы
     $.ajax({
-        type: "POST",
-        url: "smart.php", 
+        type: "POST", //Метод отправки
+        url: "smart.php", //путь до php фаила отправителя
         data: form_data,
         success: function() {
                 $('.modal-1.modal-2').css('transform', 'translateY(-50%) translateX(-50%');
@@ -33,3 +34,7 @@ $("form.contact-us").submit(function(e) {
         }
     });
 });
+}
+else {
+	alert('Не работает');
+}
