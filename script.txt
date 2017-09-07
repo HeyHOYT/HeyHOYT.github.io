@@ -1,0 +1,35 @@
+$("form.contact-us").submit(function(e) { //устанавливаем событие отправки для формы с id=form
+            var close = $('.close'),
+            close_modal = $('.close-modal'),
+            btn_order = $('#btn-order'),
+            modal_2 = $('.modal-2');
+    e.preventDefault();
+    var form_data = $('form.contact-us').serialize(); //собераем все данные из формы
+    $.ajax({
+        type: "POST", //Метод отправки
+        url: "smart.php", //путь до php фаила отправителя
+        data: form_data,
+        success: function() {
+                $('.modal-1.modal-2').css('transform', 'translateY(-50%) translateX(-50%');
+                close_modal.css({
+                    'display': 'block',
+                    'backgroundColor': 'rgba(0,0,0,.8)'
+                });
+                close.click(function() {
+                    $('.modal-1.modal-2').css('transform', 'translateY(-50%) translateX(-1000%');
+                    close_modal.css('display', 'none');
+                });
+                close_modal.click(function() {
+                    if ($('.modal-1.modal-2').hide()) {
+                        $('.modal-1.modal-2').css('transform', 'translateY(-50%) translateX(-1000%');
+                        close_modal.css('display', 'none');
+                    } else if ($('.modal-1.modal-2').show()) {
+                        $('.modal-1.modal-2').css('transform', 'translateY(-50%) translateX(-50%');
+                        close_modal.css('display', 'block');
+                    }
+                });
+            $('form.contact-us').find("input").val("");
+            $(this).trigger("reset");
+        }
+    });
+});
