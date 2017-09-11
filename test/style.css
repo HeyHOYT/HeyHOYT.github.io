@@ -136,10 +136,11 @@ table {
 .wrapper {
     text-transform: uppercase;
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: 100px 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px) minmax(200px, 1fr));
+    grid-template-rows: 100px;
     grid-column-gap: 20px;
 }
+
 
 header {
     background-color: green;
@@ -147,9 +148,10 @@ header {
 
 .block {
     display: grid;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-rows: 100px 200px 100px;
     grid-row-gap: 20px;
 }
+
 
 .aside-1,
 .aside-2 {
@@ -162,4 +164,28 @@ footer {
 
 main {
     background-color: yellow;
+}
+
+@media(max-width: 825px) {
+    .wrapper {
+        grid-template-rows: 200px 1fr 200px;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr;
+    }
+    .block {
+        grid-auto-flow: row;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: 400px;
+    }
+    footer {
+        height: 400px;
+    }
+    main {
+        height: 400px;
+    }
+    header {}
+}
+
+@media(max-width: 599px) {
+    footer {}
 }
