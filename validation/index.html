@@ -23,25 +23,39 @@
             var input1 = document.querySelector('.input-1');
             var input2 = document.querySelector('.input-2');
             if (!input1.value) {
-                console.log('Пусто');
-                input1.style.border = '1px solid red';
-                return false;
+                if_red('another');
             } else if (input1.value.length > 3) {
-                input1.style.border = '1px solid grey';
-                console.log('Не пусто');
+                if_grey('another');
             }
             if (!input2.value) {
-                input2.style.border = '1px solid red';
-                console.log('Пусто');
-                return false;
+                if_red();
             } else if (input2.value.length > 3) {
-                input2.style.border = '1px solid grey';
-                console.log('Не пусто');
+                if_grey();
             }
-            if (input2.value.length > 3 && input1.value.length > 3) {
+            if (if_val()) {
                 return true;
             }
             return false;
+
+            function if_val() {
+                return input2.value.length > 3 && input1.value.length > 3;
+            }
+
+            function if_grey(op) {
+                input2.style.border = '1px solid grey';
+                console.log('Не пусто');
+                if (op === 'another') {
+                    input1.style.border = '1px solid grey';
+                }
+            }
+
+            function if_red(op) {
+                input2.style.border = '1px solid red';
+                console.log('Не пусто');
+                if (op === 'another') {
+                    input1.style.border = '1px solid red';
+                }
+            }
         }
     }
 
