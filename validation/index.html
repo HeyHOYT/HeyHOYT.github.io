@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="">
+            <input type="text" class="input-1">
+            <input type="text" class="input-2">
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <script>
+    window.onload = function() {
+        var btn = document.querySelector('button[type="submit"]');
+        btn.onclick = function(e) {
+            var input1 = document.querySelector('.input-1');
+            var input2 = document.querySelector('.input-2');
+            if (!input1.value) {
+                console.log('Пусто');
+                input1.style.border = '1px solid red';
+                return false;
+            } else if (input1.value.length > 3) {
+                input1.style.border = '1px solid grey';
+                console.log('Не пусто');
+            }
+            if (!input2.value) {
+                input2.style.border = '1px solid red';
+                console.log('Пусто');
+                return false;
+            } else if (input2.value.length > 3) {
+                input2.style.border = '1px solid grey';
+                console.log('Не пусто');
+            }
+            if (input2.value.length > 3 && input1.value.length > 3) {
+                return true;
+            }
+            return false;
+        }
+    }
+
+    </script>
+</body>
+
+</html>
