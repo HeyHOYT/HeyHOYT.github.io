@@ -263,6 +263,7 @@ h1 {
   color: #fff;
   font-size: 1.125rem;
   line-height: 30px;
+  font-family: 'Uni Neue';
 }
 .price-h2 {
   border-radius: 10px;
@@ -401,6 +402,7 @@ form .btn {
 .begin-ul {
   position: relative;
   z-index: 1;
+  font-family: 'Uni Neue';
 }
 .think {
   background-color: #e5f5f5;
@@ -440,6 +442,7 @@ form .btn {
 .inSkype-p {
   font-size: 1.125rem;
   line-height: 25px;
+  font-family: 'Uni Neue';
 }
 .inSkype-p:first-of-type {
   padding: 40px 0px 30px;
