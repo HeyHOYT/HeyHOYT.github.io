@@ -543,7 +543,7 @@ footer form {
     font-size: 2.25rem;
   }
   .inside-block__bot {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .h2-black {
     font-size: 1.7rem;
@@ -576,6 +576,7 @@ footer form {
   }
   .courses .price-h2 {
     max-width: 80%;
+    line-height: 1.5;
   }
 }
 @media (max-width: 760px) {
@@ -638,6 +639,9 @@ footer form {
   .inside-block-contact.modal .inside-block__top h2 {
     font-size: 1.6rem;
   }
+  .motivation-wrapper__img {
+    padding-top: 15px;
+  }
 }
 @media (max-width: 667px) {
   .inside-block-contact.modal input:last-child {
@@ -679,6 +683,14 @@ footer form {
   footer input:last-child {
     margin-top: 15px;
   }
+  .price-h2 {
+    max-width: 80%;
+  }
+}
+@media (max-width: 560px) {
+  .inSkype .inSkype-p {
+    font-size: 1.2rem;
+  }
 }
 @media (max-width: 500px) {
   input {
@@ -694,7 +706,7 @@ footer form {
   }
   .price-p,
   .inSkype-p {
-    font-size: 1.225rem;
+    font-size: 1.125rem;
   }
   .inside-block-contact.modal .inputs {
     -webkit-box-orient: vertical;
@@ -711,6 +723,14 @@ footer form {
   }
   .inside-block-contact.modal input:last-child {
     margin-top: 0px;
+  }
+  .inSkype .inSkype-p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 455px) {
+  .inSkype .inSkype-p {
+    font-size: 1rem;
   }
 }
 @media (max-width: 420px) {
@@ -738,9 +758,8 @@ footer form {
   html {
     font-size: 8px;
   }
-  .price-p,
-  .inSkype-p {
-    font-size: 1.12rem;
+  .price-p {
+    font-size: 1.15rem;
   }
   img {
     height: auto;
@@ -763,9 +782,6 @@ footer form {
   }
 }
 @media (max-width: 330px) {
-  .inSkype-p {
-    font-size: 1.31rem;
-  }
   .price-h2 {
     font-size: 1.41rem;
   }
@@ -776,6 +792,9 @@ footer form {
     font-size: 2rem;
   }
   .price-p {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
+  }
+  .inSkype .inSkype-p {
+    font-size: 1.3rem;
   }
 }
