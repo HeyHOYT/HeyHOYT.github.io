@@ -282,30 +282,37 @@
     <script>
     window.onload = function() {
         var a = new Classe();
+        var close_modal = document.querySelector('.close-modal');
         var modal = document.querySelector('.modal'),
             btn = document.querySelector('.header-btn').onclick = function() {
                 a.btn();
             }
         close = document.querySelector('.close').onclick = function() {
             a.close();
-        }
+        };
 
         function Classe() {
             this.btn = function() {
                 if (modal.classList.contains('transf')) {
                     modal.classList.remove('transf');
+                    close_modal.style.display = 'block';
                 } else {
                     modal.classList.add('transf');
+                    close_modal.style.display = 'none';
                 }
             }
             this.close = function() {
                 this.btn();
-
             }
+        }
+        close_modal.onclick = function() {
+            modal.classList.add('transf');
+            close_modal.style.display = 'none';
         }
     }
 
     </script>
+    <div class="close-modal"> </div>
 </body>
 
 </html>
