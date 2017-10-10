@@ -470,7 +470,7 @@ footer form {
   z-index: 1;
   -webkit-transition: 1s;
   transition: 1s;
-  opacity: 1;
+  opacity: 1 !important;
 }
 .modal .btn {
   background-color: #3844cc;
@@ -499,6 +499,15 @@ footer form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.close-modal {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
 }
 @media (max-width: 1300px) {
   .skype,
@@ -616,11 +625,23 @@ footer form {
   .think {
     font-size: 1.65rem;
   }
-  .simple-wrapper__text {
-    padding-top:15px;
+  .inside-block-contact.modal {
+    max-width: 90%;
   }
-  .money-wrapper__img {
-    padding-bottom:15px; 
+  .inside-block-contact.modal input {
+    padding: 10px 8px;
+    max-width: 80%;
+  }
+  .inside-block-contact.modal .btn {
+    width: 200px;
+  }
+  .inside-block-contact.modal .inside-block__top h2 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 667px) {
+  .inside-block-contact.modal input:last-child {
+    margin-top: 15px;
   }
 }
 @media (max-width: 650px) {
@@ -673,7 +694,23 @@ footer form {
   }
   .price-p,
   .inSkype-p {
-    font-size: 1rem;
+    font-size: 1.225rem;
+  }
+  .inside-block-contact.modal .inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inside-block-contact.modal input {
+    margin-bottom: 15px;
+    width: 70%;
+  }
+  .inside-block-contact.modal input:last-child {
+    margin-top: 0px;
   }
 }
 @media (max-width: 420px) {
@@ -693,16 +730,17 @@ footer form {
   .inputs input:first-child {
     margin-top: 0px;
   }
+  .inside-block-contact.modal input:first-child {
+    margin-bottom: 0px;
+  }
 }
 @media (max-width: 400px) {
   html {
     font-size: 8px;
   }
+  .price-p,
   .inSkype-p {
     font-size: 1.12rem;
-  }
-  .price-p {
-    font-size:1.3rem;
   }
   img {
     height: auto;
