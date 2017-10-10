@@ -698,9 +698,11 @@ footer form {
   html {
     font-size: 8px;
   }
-  .price-p,
   .inSkype-p {
     font-size: 1.12rem;
+  }
+  .price-p {
+    font-size:1.3rem;
   }
   img {
     height: auto;
