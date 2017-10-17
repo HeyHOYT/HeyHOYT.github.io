@@ -1,7 +1,8 @@
 * {
-  margin: 0px;
-  padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
+
 html,
 body,
 div,
@@ -83,13 +84,14 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 article,
 aside,
 details,
@@ -101,122 +103,170 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+    display: block;
 }
+
 body {
-  line-height: 1;
+    line-height: 1;
 }
+
 ol,
 ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
+
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
+
 a {
-  text-decoration: none;
-  color: #fff;
+    text-decoration: none;
+    color: #fff;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
-  content: none;
+    content: '';
+    content: none;
 }
+
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 .container {
-  max-width: 1170px;
-  margin: 0px auto;
+    max-width: 1170px;
+    margin: 0px auto;
 }
+
 .wrapper {
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  color: #fff;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    color: #fff;
 }
+
 p {
-  color: #6c6c6c;
+    color: #6c6c6c;
 }
+
 h3 {
-  color: #222;
+    color: #222;
 }
+
 #particles-js {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    background-color: #111;
 }
+
 #particles-js canvas {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  height: 710px !important;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 755px !important;
 }
+
 header {
-  text-transform: uppercase;
-  padding: 55px 0px 85px;
-  position: relative;
-  z-index: -1;
-  background-color: #111;
+    text-transform: uppercase;
+    padding: 55px 0px 85px;
+    position: relative;
+    z-index: 1;
 }
+
 header h2 {
-  text-transform: none;
+    text-transform: none;
 }
+
 .text-header {
-  text-align: center;
-  padding: 200px 0px 270px;
+    text-align: center;
+    padding: 200px 0px 270px;
 }
+
 h1 {
-  color: #999999;
-  font-weight: 300;
-  font-size: 2.75rem;
-  padding-bottom: 15px;
+    color: #999999;
+    font-weight: 300;
+    font-size: 2.75rem;
+    padding-bottom: 15px;
 }
+
 h1 span {
-  color: #fcac45;
-  font-family: 'Lato';
-  font-weight: bold;
+    color: #fcac45;
+    font-family: 'Lato';
+    font-weight: bold;
 }
+
 .nav-header {
-  font-family: 'Lato';
-  font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    font-family: 'Lato';
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
+
 .logo {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
+
 .menu-ul {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 0.875rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    width: 500px;
+    max-width: 100%;
 }
+
 .menu-ul li {
-  padding-left: 25px;
+    position: relative;
+    border-bottom: 1px solid transparent;
+    transition: 1s;
 }
-.menu-ul li:first-child {
-  padding-left: 0px;
+
+.menu-ul a:before,
+.menu-ul a:after {
+    content: '';
+    transition: 1s;
 }
+
+.menu-ul a:hover:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 65%;
+    height: 2.6px;
+    right: 50%;
+    background-color: #444;
+}
+
+.menu-ul a:hover:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 65%;
+    height: 2.6px;
+    background-color: #fba22f;
+}
+
 .scroll-bot {
-  width: 10px;
-  margin: 0px auto;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  padding: 18px 20px;
+    width: 10px;
+    margin: 0px auto;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 18px 20px;
 }
