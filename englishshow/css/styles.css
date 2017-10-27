@@ -1,0 +1,946 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+.container {
+    width: 950px;
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+.wrapper {
+    font-family: 'Uni Neue', 'Arial', sans-serif;
+    text-align: center;
+}
+
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4e7ee7), to(#7619d4));
+    background-image: linear-gradient(to bottom, #4e7ee7, #7619d4);
+    padding: 95px 0px;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.875rem;
+    font-weight: 900;
+}
+
+.header-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header-wrapper__text {
+    line-height: 2.5;
+}
+
+.block-header-h2 h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+
+.btn {
+    border-radius: 27px;
+    background-color: #f8c53e;
+    -webkit-box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.3);
+    border: solid 2px #edbb38;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 900;
+    padding: 18px 30px;
+}
+
+.inside-block {
+    border-radius: 25px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.2);
+    width: 650px;
+    max-width: 100%;
+    margin: 0px auto;
+    position: relative;
+    top: -50px;
+}
+
+.inside-block__top {
+    padding: 35px 0px;
+}
+
+.inside-block__bot {
+    background-color: rgba(78, 125, 231, 0.1);
+    padding: 35px 0px;
+    font-size: 1.0625rem;
+    line-height: 1.5;
+    border-bottom-right-radius: 27px;
+    border-bottom-left-radius: 27px;
+}
+
+.h2-black-block h2,
+.block-h2-skype h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.625rem;
+    line-height: 1.25;
+}
+
+.block-h2-skype {
+    padding-bottom: 15px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.section-h3 h3 {
+    font-size: 1.375rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.section-p {
+    font-size: 1.125rem;
+}
+
+.section-p .bold {
+    font-weight: 800;
+}
+
+.section-p-relative {
+    padding: 60px 0px;
+}
+
+.section-ul {
+    font-size: 1.125rem;
+}
+
+.section-ul li {
+    padding-top: 10px;
+}
+
+.section-ul li:first-child {
+    padding-top: 0px;
+}
+
+.section-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: left;
+    line-height: 1.4;
+    padding-top: 15px;
+}
+
+.section-relative {
+    padding: 120px 0px;
+}
+
+.section-h3 h3 {
+    padding-bottom: 40px;
+}
+
+.money.section-relative {
+    padding-top: 0px;
+    padding-bottom: 120px;
+}
+
+.heavy {
+    font-weight: 800;
+}
+
+.price {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4e7ee7), to(#7619d4));
+    background-image: linear-gradient(to bottom, #4e7ee7, #7619d4);
+    padding: 80px 0px 180px;
+}
+
+.price-p {
+    color: #fff;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    font-family: 'Uni Neue';
+}
+
+.money-wrapper__img {
+    padding-top: 15px;
+}
+
+.simple-wrapper__img {
+    padding-bottom: 15px;
+}
+
+.price-h2-block h2 {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: solid 1px #e5e5e5;
+    max-width: 500px;
+    margin: 0px auto;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-size: 1.625rem;
+    font-weight: bold;
+}
+
+.price-h2-inside-block h2 {
+    font-weight: 900;
+    font-size: 1.1875rem;
+}
+
+.price img {
+    padding: 25px 0px;
+}
+
+.size22 {
+    font-size: 1.375rem;
+}
+
+input {
+    padding: 13px 8px;
+    border-radius: 10px;
+    border: solid 1px #9b9b9b;
+    outline: none;
+    height: 20px;
+}
+
+.earth {
+    height: auto;
+}
+
+::-webkit-input-placeholder {
+    color: #9b9b9b;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+::-moz-placeholder {
+    color: #9b9b9b;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+:-moz-placeholder {
+    color: #9b9b9b;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+:-ms-input-placeholder {
+    color: #9b9b9b;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.inside-block-contact {
+    width: 710px;
+    max-width: 95%;
+    padding-bottom: 50px;
+    margin-top: -100px;
+}
+
+.inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 0px 20px;
+}
+
+form .btn {
+    width: 455px;
+    max-width: 100%;
+    margin: 0px auto;
+    font-weight: 900;
+    font-size: 1.25rem;
+    padding: 23px;
+    margin-top: 30px;
+}
+
+.skype {
+    position: relative;
+    margin-top: 100px;
+}
+
+.skype:before {
+    content: '';
+    width: 50.3%;
+    height: 190px;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background-color: #d95b6a;
+    -webkit-transform: skewY(2.5deg);
+    transform: skewY(2.5deg);
+    z-index: -1;
+}
+
+.skype:after {
+    content: '';
+    width: 50.3%;
+    height: 190px;
+    top: -100px;
+    position: absolute;
+    right: 0;
+    background-color: #d95b6a;
+    -webkit-transform: skewY(-2.5deg);
+    transform: skewY(-2.5deg);
+    z-index: -1;
+}
+
+.plus_skype {
+    position: relative;
+}
+
+.plus_skype:before {
+    content: '';
+    width: 50.3%;
+    height: 190px;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    background-color: #d95b6a;
+    -webkit-transform: skewY(2deg);
+    transform: skewY(2deg);
+}
+
+.plus_skype:after {
+    content: '';
+    width: 50.3%;
+    height: 190px;
+    bottom: -100px;
+    position: absolute;
+    right: 0;
+    background-color: #d95b6a;
+    -webkit-transform: skewY(-2deg);
+    transform: skewY(-2deg);
+}
+
+.skype,
+.think {
+    text-align: left;
+    color: #fff;
+    background-color: #d95b6a;
+    font-size: 1.125rem;
+    padding: 30px 0px;
+    line-height: 1.45;
+}
+
+.skype-ul,
+.begin-ul {
+    position: relative;
+    z-index: 1;
+    font-family: 'Uni Neue';
+}
+
+.think {
+    background-color: #e5f5f5;
+    color: #000;
+    padding: 170px 0px 180px;
+}
+
+.begin-ul-relative {
+    padding-bottom: 30px;
+}
+
+.courses {
+    border-radius: 25px;
+    background-color: #4a4a4a;
+    -webkit-box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.1);
+    width: 800px;
+    max-width: 90%;
+    margin: 0px auto;
+    padding: 35px 0px 20px;
+    margin-top: -120px;
+}
+
+.courses .price-h2-block h2 {
+    width: 590px;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.courses img {
+    padding-top: 20px;
+}
+
+.future {
+    padding: 40px 0px;
+}
+
+.inSkype-h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.inSkype-p {
+    font-size: 1.125rem;
+    line-height: 1.4;
+    font-family: 'Uni Neue';
+}
+
+.inSkype-p:first-of-type {
+    padding: 40px 0px 30px;
+}
+
+footer {
+    padding: 50px 0px 80px;
+}
+
+footer form {
+    width: 650px;
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+.motivation-wrapper {
+    padding-right: 125px;
+}
+
+.modal {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -20%);
+    transform: translate(-50%, -20%);
+    font-family: 'Uni Neue';
+    z-index: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+    opacity: 1 !important;
+}
+
+.modal .btn {
+    background-color: #3844cc;
+    color: #fff;
+    border-color: #2926a7;
+}
+
+.opac {
+    opacity: 0;
+}
+
+.close {
+    font-size: 45px;
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+}
+
+.transf {
+    -webkit-transform: translate(-50%, -500%);
+    transform: translate(-50%, -500%);
+}
+
+.flex-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.close-modal {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+    .skype,
+    .think {
+        font-size: 1.225rem;
+    }
+    .price-p,
+    .inSkype-p {
+        font-size: 1.225rem;
+    }
+}
+
+@media (max-width: 960px) {
+    html {
+        font-size: 14px;
+    }
+    .header-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .header-wrapper img {
+        height: auto;
+        width: 80%;
+    }
+    h1 {
+        font-size: 2.875rem;
+    }
+    .h2 {
+        font-size: 2.125rem;
+    }
+    .btn {
+        font-size: 2.25rem;
+    }
+    .inside-block__bot {
+        font-size: 1.225rem;
+    }
+    .h2-black,
+    .block-h2-skype h2 {
+        font-size: 1.7rem;
+    }
+    .section-wrapper,
+    .motivation,
+    .section-relative {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .size22 {
+        font-size: 1.875rem;
+    }
+    .skype,
+    .think {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .plus_skype:before,
+    .plus_skype:after {
+        bottom: -36px;
+    }
+    .future img {
+        height: auto;
+        width: 70%;
+    }
+    .inputs {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .courses .price-h2-block h2 {
+        max-width: 80%;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 760px) {
+    .inside-block__bot {
+        font-size: 1.65rem;
+    }
+    html {
+        font-size: 12px;
+    }
+    .flex-main {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .flex-main .motivation-wrapper__img {
+        text-align: center;
+    }
+    .flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-top: 40px;
+    }
+    .section-p {
+        padding: 0px;
+    }
+    .section-wrapper,
+    .motivation,
+    .section-relative {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .section-h3 h3 {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .section-p {
+        font-size: 1.625rem;
+    }
+    .section-ul {
+        font-size: 1.625rem;
+    }
+    .skype,
+    .think {
+        font-size: 1.25rem;
+    }
+    .inside-block-contact.modal {
+        max-width: 90%;
+    }
+    .inside-block-contact.modal input {
+        padding: 10px 8px;
+        max-width: 80%;
+    }
+    .inside-block-contact.modal .btn {
+        width: 345px;
+    }
+    .inside-block-contact.modal .inside-block__top h2 {
+        font-size: 1.66rem;
+    }
+    .motivation-wrapper__img {
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 667px) {
+    .inside-block-contact.modal input:last-child {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    html {
+        font-size: 13px;
+    }
+    .block-h2-skype h2 {
+        font-size: 1.9rem !important;
+    }
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 632px) {
+    .inside-block .btn {
+        width: 350px;
+    }
+    .inside-block {
+        width: 600px;
+    }
+    .inside-block input:last-child {
+        margin-top: 20px;
+    }
+    .size22 {
+        font-size: 1.65rem;
+    }
+    .h2-black,
+    .block-h2-skype h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    footer input:last-child {
+        margin-top: 15px;
+    }
+    .price-h2-block h2 {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 560px) {
+    .inSkype .inSkype-p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    input {
+        padding: 13px 5px;
+    }
+    .inside-block .btn {
+        width: 265px;
+        padding: 15px 5px;
+    }
+    footer .btn {
+        width: 250px;
+        padding: 15px;
+    }
+    .price-p,
+    .inSkype-p {
+        font-size: 1.125rem;
+    }
+    .price .price-p {
+        font-size: 1.2rem;
+    }
+    .inside-block-contact.modal .inputs {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .inside-block-contact.modal input {
+        margin-bottom: 15px;
+        width: 70%;
+    }
+    .inside-block-contact.modal input:last-child {
+        margin-top: 0px;
+    }
+    .inSkype .inSkype-p {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 455px) {
+    .inSkype .inSkype-p {
+        font-size: 1.2rem;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media(max-width:432px) {
+    .inside-block__bot {
+        font-size: 1.4rem;
+    }
+    .section-p,
+    .section-ul {
+        font-size: 1.4rem;
+    }
+    .motivation-wrapper__img,
+    .simple-wrapper__img,
+    .money-wrapper__img {
+        height: auto;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 423px) {
+    .inputs {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .inputs input {
+        width: 75%;
+        margin-top: 15px;
+    }
+    .inputs input:first-child {
+        margin-top: 0px;
+    }
+    .inside-block-contact.modal input:first-child {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 8px;
+    }
+    .price-p {
+        font-size: 1.2rem;
+    }
+    img {
+        height: auto;
+        width: 80%;
+    }
+    .earth {
+        width: 45%;
+    }
+    .inside-block__top h2 {
+        font-size: 1.7rem;
+    }
+    .header-wrapper img {
+        width: 100%;
+    }
+    h1 {
+        font-size: 2.575rem;
+    }
+    header .btn {
+        padding: 13px 24px;
+    }
+    .inside-block-contact.modal .btn {
+        width: 225px;
+    }
+    .inside-block__bot {
+        font-size: 1.28rem;
+    }
+    .section-p,
+    .section-ul {
+        font-size: 1.28rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .price-h2-block h2 {
+        font-size: 1.41rem;
+    }
+    .inSkype-p {
+        font-size: 1.70rem;
+    }
+    .inSkype-h2 {
+        font-size: 2rem;
+    }
+    .price-p {
+        font-size: 1.1rem;
+    }
+    .inSkype .inSkype-p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 322px) {
+    .price .price-p {
+        font-size: 1.16rem;
+    }
+}
