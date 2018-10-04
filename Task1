@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.IO;
+
+namespace WindowsFormsApp6
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string _text1 = textBox1.Text;
+            string _text2 = textBox2.Text;
+            string _text3 = textBox3.Text;
+
+            DirectoryInfo dir = new DirectoryInfo(_text1 +"//"+ _text2);
+            
+
+            if (!(dir.Exists))
+            {
+                dir.Create();
+                StreamWriter _text4 = File.CreateText($"{dir}" + "//" + $"{_text3}");
+                _text4.Write(textBox4.Text);
+                MessageBox.Show("Успешно");
+            }
+            
+            else
+            {
+                MessageBox.Show("Такой путь уже есть");
+            }
+        }
+    }
+}
